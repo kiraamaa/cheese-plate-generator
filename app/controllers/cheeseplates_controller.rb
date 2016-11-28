@@ -1,7 +1,7 @@
 class CheeseplatesController < ApplicationController
   def index
-   @cheeseplates = Cheeseplate.all
+    @cheeseplates = Cheeseplate.all
 
-   render json: @cheeseplates
- end
+    render json: @cheeseplates
+  end
 end
