@@ -61,17 +61,52 @@
      <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Cheese Plate Generator</h1>
      <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Discover new cheese plates</h3>
      <ul class="list-inline intro-social-buttons">
-       <li id="quiz" ><a href="#takequiz" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Click here to begin</span></a>
+       <li id="signin"><a href="#sign-in" data-toggle="modal" data-target="#exampleModal" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Sign up</span></a>
        </li>
      </ul>
    </div>
        <!-- /.container -->
    <div class="col-xs-12 text-center abcen wow fadeIn">
      <div class="button_down ">
-       <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="assets/img/icon/circle.png" alt=""> </a>
+       <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#cheeseplate"> <img class="img_scroll" src="assets/img/icon/circle.png" alt=""> </a>
      </div>
    </div>
    </div>
+
+<!-- Sign in modal
+   <div class="bd-example">
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+             <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+           </div>
+           <div class="modal-body">
+             <form>
+               <div class="form-group">
+                 <label for="recipient-name" class="form-control-label">Recipient:</label>
+                 <input type="text" class="form-control" id="recipient-name">
+               </div>
+               <div class="form-group">
+                 <label for="message-text" class="form-control-label">Message:</label>
+                 <textarea class="form-control" id="message-text"></textarea>
+               </div>
+             </form>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary">Send message</button>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>-->
 
  <!-- NavBar-->
  <nav class="navbar-default" role="navigation">
@@ -164,7 +199,7 @@
  </div>
 
  <!-- Use it -->
-   <div id ="useit" class="content-section-a">
+   <!--<div id ="useit" class="content-section-a">
 
        <div class="container">
 
@@ -189,7 +224,7 @@
        </div>
            </div>
        </div>
-       <!-- /.container -->
+       /.container
    </div>
 
    <div class="content-section-b">
@@ -258,15 +293,15 @@
            </div>
        </div>
 
-   </div>
+   </div>-->
 
  <!-- Screenshot -->
  <div id="screen" class="content-section-b">
        <div class="container">
          <div class="row" >
       <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
-       <h2>Screen App</h2>
-       <p class="lead" style="margin-top:0">A special thanks to Death.</p>
+       <h2>Cheese Library</h2>
+       <p class="lead" style="margin-top:0">Learn about different cheeses and their flavor profiles.</p>
       </div>
      </div>
        <div class="row wow bounceInUp" >
@@ -314,7 +349,7 @@
 
  </div>
 
- <div  class="content-section-c ">
+ <!--<div  class="content-section-c ">
    <div class="container">
      <div class="row">
      <div class="col-md-6 col-md-offset-3 text-center white">
@@ -341,10 +376,10 @@
      </div>
      </div>>
    </div>
- </div>
+ </div>-->
 
  <!-- Credits -->
- <div id="credits" class="content-section-a">
+ <!--<div id="credits" class="content-section-a">
    <div class="container">
      <div class="row">
 
@@ -402,10 +437,10 @@
        </div>
      </div>
    </div>
- </div>
+ </div>-->
 
  <!-- Banner Download -->
- <div id="takequiz" class="banner">
+ <!--<div id="takequiz" class="banner">
    <div class="container">
      <div class="row">
        <div class="col-md-6 col-md-offset-3 text-center wrap_title">
@@ -415,16 +450,16 @@
       </div>
      </div>
    </div>
- </div>
+ </div>-->
 
- <!-- Contact -->
- <div id="contact" class="content-section-a">
+ <!-- Sign in -->
+ <div id="sign-in" class="content-section-a">
    <div class="container">
      <div class="row">
 
      <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-       <h2>Contact Us</h2>
-       <p class="lead" style="margin-top:0">A special thanks to Death.</p>
+       <h2>Sign Up</h2>
+       <p class="lead" style="margin-top:0">Create an account to get started.</p>
      </div>
 
      <form role="form" action="" method="post" >
@@ -446,25 +481,25 @@
          </div>
 
          <div class="form-group">
-           <label for="InputMessage">Message</label>
+           <label for="InputPassword">Your Password</label>
            <div class="input-group">
-             <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+             <input type="password" class="form-control" id="InputPassword" name="InputPassword" placeholder="Enter Password" required  >
              <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
            </div>
          </div>
 
          <input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+         <p id="sign-in-text">Already have an account? Sign in <a href=#>here</a>.</p>
        </div>
      </form>
 
      <hr class="featurette-divider hidden-lg">
        <div class="col-md-5 col-md-push-1 address">
          <address>
-         <h3>Office Location</h3>
-         <p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">The Pentagon<br>
-         Washington, DC 20301</a><br>
-         Phone: XXX-XXX-XXXX<br>
-         Fax: XXX-XXX-YYYY</p>
+         <h3>Contact Kira</h3>
+         <p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">General Assembly<br>
+         Cambridge, MA 02139</a><br>
+         Phone: 857-277-2977<br>
          </address>
 
          <h3>Social</h3>
@@ -481,45 +516,7 @@
 
 
 
-   <footer>
-     <div class="container">
-       <div class="row">
-         <div class="col-md-7">
-           <h3 class="footer-title">Follow Me!</h3>
-           <p>Vuoi ricevere news su altri template?<br/>
-             Visita Andrea Galanti.it e vedrai tutte le news riguardanti nuovi Theme!<br/>
-             Go to: <a  href="http://andreagalanti.it" target="_blank">andreagalanti.it</a>
-           </p>
 
-     <!-- LICENSE -->
-     <a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy"
-      property="dc:title">Flatfy Theme </a> by
-      <a rel="dc:creator" href="http://www.andreagalanti.it"
-      property="cc:attributionName">Andrea Galanti</a>
-      is licensed to the public under
-      <BR>the <a rel="license"
-      href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative
-      Commons Attribution 3.0 License - NOT COMMERCIAL</a>.
-
-
-         </div> <!-- /col-xs-7 -->
-
-         <div class="col-md-5">
-           <div class="footer-banner">
-             <h3 class="footer-title">Flatfy Theme</h3>
-             <ul>
-               <li>12 Column Grid Bootstrap</li>
-               <li>Form Contact</li>
-               <li>Drag Gallery</li>
-               <li>Full Responsive</li>
-               <li>Lorem Ipsum</li>
-             </ul>
-             Go to: <a href="http://andreagalanti.it/flatfy" target="_blank">andreagalanti.it/flatfy</a>
-           </div>
-         </div>
-       </div>
-     </div>
-   </footer>
 
    <!-- JavaScript -->
    <script src="assets/js/jquery-1.10.2.js"></script>
