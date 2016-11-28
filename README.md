@@ -10,9 +10,6 @@ My ideal user base would be the 25-55 age range, namely individuals who are curi
 
 ## User Stories
 
-We have gone over this before. Please refer to your notes, previous repos or the
-google machine if you need further assistance.
-
 As a user I want to be able to determine my cheese flavor preferences.
 As a user I want to be able to see a cheese plate in line with my preferences.
 As a user I want to be able to see the individual cheese with a description.
@@ -43,9 +40,6 @@ Cheese to find a given cheese, cheeseplate to find a given cheese plate, and the
 (http://i.imgur.com/R8mJ9x5.png)
 
 ## Timetable
-
-Write a basic timetable for yourself, you don't have to stick to it but it
-helps to go in with a plan.
 
 UI - ideally completed over break/ 1 day
 Authentication API - 1 day
