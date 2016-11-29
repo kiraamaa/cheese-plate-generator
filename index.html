@@ -20,6 +20,8 @@
    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+ <link href='http://www.fontspace.com/m%C3%A5ns-greb%C3%A4ck/signerica-fat?text=' rel='stylesheet' type='text/css'>
+
 
    <!-- Custom CSS-->
    <link href="assets/css/general.css" rel="stylesheet">
@@ -59,9 +61,9 @@
    <div class="intro-header">
    <div class="col-xs-12 text-center abcen1">
      <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Cheese Plate Generator</h1>
-     <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Discover new cheese plates</h3>
+     <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Discover your new favorite cheese plate</h3>
      <ul class="list-inline intro-social-buttons">
-       <li id="signin"><a href="#sign-in" data-toggle="modal" data-target="#exampleModal" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Sign up</span></a>
+       <li id="signup"><a href="#sign-up" data-toggle="modal" data-target="#exampleModal" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Sign up</span></a>
        </li>
      </ul>
    </div>
@@ -73,43 +75,8 @@
    </div>
    </div>
 
-<!-- Sign in modal
-   <div class="bd-example">
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-       <div class="modal-dialog" role="document">
-         <div class="modal-content">
-           <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               <span aria-hidden="true">&times;</span>
-             </button>
-             <h4 class="modal-title" id="exampleModalLabel">New message</h4>
-           </div>
-           <div class="modal-body">
-             <form>
-               <div class="form-group">
-                 <label for="recipient-name" class="form-control-label">Recipient:</label>
-                 <input type="text" class="form-control" id="recipient-name">
-               </div>
-               <div class="form-group">
-                 <label for="message-text" class="form-control-label">Message:</label>
-                 <textarea class="form-control" id="message-text"></textarea>
-               </div>
-             </form>
-           </div>
-           <div class="modal-footer">
-             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-             <button type="button" class="btn btn-primary">Send message</button>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>-->
-
  <!-- NavBar-->
- <nav class="navbar-default" role="navigation">
+ <nav class="navbar navbar-default navbar-static-top" role="navigation">
    <div class="container">
      <div class="navbar-header">
        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -141,7 +108,7 @@
 
      <div class="col-md-6 col-md-offset-3 text-center wrap_title">
        <h2>My Cheese Plates</h2>
-       <p class="lead" style="margin-top:0">Edit your saved cheese plates here.</p>
+       <p class="lead" style="margin-top:0">View and edit your saved cheese plates here.</p>
 
      </div>
 
@@ -452,8 +419,8 @@
    </div>
  </div>-->
 
- <!-- Sign in -->
- <div id="sign-in" class="content-section-a">
+ <!-- Sign up -->
+ <div id="sign-up" class="content-section-a">
    <div class="container">
      <div class="row">
 
@@ -489,7 +456,7 @@
          </div>
 
          <input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
-         <p id="sign-in-text">Already have an account? Sign in <a href=#>here</a>.</p>
+         <p id="sign-in-text">Already have an account? Sign in <a href=#signInModal data-toggle="modal" data-target="signInModal">here</a>.</p>
        </div>
      </form>
 
@@ -503,12 +470,14 @@
          </address>
 
          <h3>Social</h3>
-         <li class="social">
-         <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
-         <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a>
-         <a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
-         <a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
-         </li>
+         <ul>
+           <li class="social">
+           <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+           <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a>
+           <a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+           <a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
+           </li>
+        </ul>
        </div>
      </div>
    </div>
