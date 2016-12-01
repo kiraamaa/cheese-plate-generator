@@ -9,7 +9,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# cheeseplates = Cheeseplate.create([{ name: 'Nutty' }, { name: 'Piquant' }, { name: 'Floral' }, { name: 'Buttery' }, { name: 'Earthy' }, { name: 'Tangy' }])
+cheeseplates = Cheeseplate.create([{ name: 'Nutty' }, { name: 'Piquant' }, { name: 'Floral' }, { name: 'Buttery' }, { name: 'Earthy' }, { name: 'Tangy' }])
 cheeses = Cheese.create([
   { name: 'Beaufort',
   description: 'This giant 80 pound cheese is fruity and nutty. Hailing from the French Alps, it is a great melter and is often added to fondue.' },
