@@ -1,3 +1,3 @@
-# Cheese Plate Generator
+# Cheese Plate API
 
-Test README
+Back end for cheese plate generator app
