@@ -23,7 +23,7 @@ echo
 #   --header "Content-Type: application/json" \
 #   --data '{
 #     "credentials": {
-#       "email": "'"bob@mail.com"'",
+#       "email": "'"blah@mail.com"'",
 #       "password": "'"open"'",
 #       "password_confirmation": "'"open"'"
 #     }

@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show]
 
   get '/cheeseplates', to: 'cheeseplates#index'
+  get '/cheeseplates/:id', to: 'cheeseplates#show'
+  patch '/cheeseplates/:id', to: 'cheeseplates#update'
+  delete '/cheeseplates/:id', to: 'cheeseplates#destroy'
 end
