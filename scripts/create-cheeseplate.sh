@@ -9,7 +9,6 @@ curl --include --request POST http://localhost:4741/cheeseplates \
   --header "Content-Type: application/json" \
   --data '{
     "cheeseplate": {
-      "cheese_id": "2",
-      "user_id": "1"
+      "name": "Floral"
     }
   }'

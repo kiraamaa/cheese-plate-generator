@@ -1,3 +1,3 @@
 class CheeseplateSerializer < ActiveModel::Serializer
-  attributes :name, :user, :cheese
+  attributes :name, :id, :user, :cheese
 end
