@@ -1,4 +1,4 @@
-class CheeseplatesController < ApplicationController
+class CheeseplatesController < OpenReadController
   before_action :set_cheeseplate, only: [:show, :update, :destroy]
 
   def set_cheeseplate
@@ -20,7 +20,7 @@ class CheeseplatesController < ApplicationController
   end
 
   def create
-    @cheeseplate = Cheeseplate.new(cheeseplate_params)
+    @cheeseplate = current_user.cheeseplates.build(cheeseplate_params)
 
     if @cheeseplate.save
       render json: @cheeseplate, status: :created
