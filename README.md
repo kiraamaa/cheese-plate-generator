@@ -1,4 +1,4 @@
 # Cheese Plate API
 
-Back end for cheese plate generator app
+Back end for Cheese Plate Generator app<br>
 https://github.com/kiraamaa/cheese-plate-app
