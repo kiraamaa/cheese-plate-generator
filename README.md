@@ -6,3 +6,11 @@ Front end repo: https://github.com/kiraamaa/cheese-plate-app<br>
 
 API cheeses route: https://hidden-lowlands-96809.herokuapp.com/cheeses<br>
 API cheeseplates route: https://hidden-lowlands-96809.herokuapp.com/cheeseplates
+
+## Technologies Used
+
+-   Ruby on Rails
+-   Javascript
+-   HTML5
+-   CSS3
+-   Bootstrap
