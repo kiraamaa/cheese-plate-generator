@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show]
 
   resources :cheeseplates, only: [:index, :show, :create, :update, :destroy]
-  resources :cheeses, only: [:index, :show, :create, :update, :destroy]
+  resources :cheeses, only: [:index]
 end

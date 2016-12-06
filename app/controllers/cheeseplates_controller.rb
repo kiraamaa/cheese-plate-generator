@@ -2,7 +2,7 @@ class CheeseplatesController < OpenReadController
   before_action :set_cheeseplate, only: [:show, :update, :destroy]
 
   def set_cheeseplate
-    @cheeseplate = Cheeseplate.find(params[:id])
+    @cheeseplate = current_user.cheeseplates.find(params[:id])
   end
 
   def cheeseplate_params
@@ -10,7 +10,7 @@ class CheeseplatesController < OpenReadController
   end
 
   def index
-    @cheeseplates = Cheeseplate.all
+    @cheeseplates = current_user.cheeseplates.all
 
     render json: @cheeseplates
   end
