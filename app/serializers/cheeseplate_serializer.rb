@@ -1,5 +1,5 @@
 class CheeseplateSerializer < ActiveModel::Serializer
-  attributes :name, :id, :user, :cheese, :editable
+  attributes :name, :id, :cheeses, :editable
 
   def editable
     scope == object.user

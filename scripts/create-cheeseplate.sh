@@ -12,3 +12,13 @@ curl --include --request POST http://localhost:4741/cheeseplates \
       "name": "Floral"
     }
   }'
+
+  curl --include --request PATCH http://localhost:4741/cheeseplates/21 \
+  --header "Content-Type: application/json" \
+  --data '{
+    "cheeseplate": {
+      "cheese_id": "1"
+    }
+  }'
+
+  curl --include --request DELETE http://localhost:4741/cheeses/21

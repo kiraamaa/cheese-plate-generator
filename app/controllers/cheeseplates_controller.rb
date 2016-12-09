@@ -9,8 +9,13 @@ class CheeseplatesController < OpenReadController
     params.require(:cheeseplate).permit(:name)
   end
 
+  def edit_plate_params
+    params.require(:cheese).permit(:id)
+  end
+
   def index
     @cheeseplates = current_user.cheeseplates.all
+    # @cheesesplates = Cheeseplates.all
 
     render json: @cheeseplates
   end
@@ -30,8 +35,18 @@ class CheeseplatesController < OpenReadController
   end
 
   def update
-    if @cheeseplate.update(cheeseplate_params)
-      head :no_content
+    if params[:add]
+      cheese = Cheese.find(edit_plate_params[:id])
+      @cheeseplate.cheeses.push(cheese)
+    elsif params[:remove]
+      cheese = @cheeseplate.cheeses.find(edit_plate_params[:id])
+      @cheeseplate.cheeses.delete(cheese)
+    else
+
+    end
+
+    if @cheeseplate.save
+      render json: @cheeseplate
     else
       render json: @cheeseplate.errors, status: :unprocessable_entity
     end
