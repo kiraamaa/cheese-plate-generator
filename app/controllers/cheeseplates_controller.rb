@@ -46,7 +46,7 @@ class CheeseplatesController < OpenReadController
     end
 
     if @cheeseplate.save
-      render json: @cheeseplate
+      render json: @cheeseplates
     else
       render json: @cheeseplate.errors, status: :unprocessable_entity
     end
