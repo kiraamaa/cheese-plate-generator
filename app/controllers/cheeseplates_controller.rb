@@ -42,7 +42,7 @@ class CheeseplatesController < OpenReadController
       cheese = @cheeseplate.cheeses.find(edit_plate_params[:id])
       @cheeseplate.cheeses.delete(cheese)
     else
-
+      render json: @cheeseplate.errors, status: :unprocessable_entity
     end
 
     if @cheeseplate.save
